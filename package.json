@@ -1,0 +1,16 @@
+{
+  "name": "dark-mystery-lost-asylum",
+  "version": "5.0.3",
+  "description": "3D Psychological Horror Game for Android - Fixed Workflow",
+  "main": "index.html",
+  "scripts": {
+    "build": "node build.js"
+  },
+  "dependencies": {
+    "@capacitor/android": "^6.0.0",
+    "@capacitor/core": "^6.0.0"
+  },
+  "devDependencies": {
+    "@capacitor/cli": "^6.0.0"
+  }
+}

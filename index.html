@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <title>DARK MYSTERY: THE LOST ASYLUM</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div id="game-container">
+        <canvas id="renderCanvas"></canvas>
+        <div id="ui-overlay">
+            <div id="hud">
+                <div id="chapter-title">DARK MYSTERY: THE LOST ASYLUM</div>
+                <div id="objective-box">
+                    <span id="obj-label">GÖREV:</span>
+                    <span id="obj-text">Blackwood Hastanesi'ne giriş yap.</span>
+                </div>
+                <div id="flashlight-status">
+                    <span>Fener: <strong id="fl-state">KAPALI</strong></span> | 
+                    <span>Pil: <strong id="fl-battery">100%</strong></span>
+                </div>
+            </div>
+
+            <!-- Touch Controls for Android -->
+            <div id="touch-controls">
+                <div id="joystick-zone">
+                    <div id="joystick-base"><div id="joystick-stick"></div></div>
+                </div>
+                <div id="action-buttons">
+                    <button id="btn-interact" class="touch-btn">ETKİLEŞİM</button>
+                    <button id="btn-flashlight" class="touch-btn">FENER</button>
+                    <button id="btn-inventory" class="touch-btn">ENVANTER</button>
+                </div>
+            </div>
+
+            <!-- Dialogue / Document Modal -->
+            <div id="modal-view" class="hidden">
+                <div id="modal-content">
+                    <h2 id="modal-title">Belge</h2>
+                    <div id="modal-body"></div>
+                    <button id="modal-close">KAPAT</button>
+                </div>
+            </div>
+            
+            <!-- Audio / Cinematic Modal -->
+            <div id="audio-modal" class="hidden">
+                <div id="audio-content">
+                    <h3 id="audio-title">Ses Kaydı / Sinematik</h3>
+                    <p id="audio-sub">Blackwood Arşivi</p>
+                    <button id="btn-play-audio">İNCELE</button>
+                    <button id="audio-close">KAPAT</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 17 Classic Scripts (A1 & A2 Architecture, Single DM Namespace, Chapters 1 to 5) -->
+    <script src="js/core/dm.js"></script>
+    <script src="js/core/util.js"></script>
+    <script src="js/core/settings.js"></script>
+    <script src="js/core/save.js"></script>
+    <script src="js/data/i18n.js"></script>
+    <script src="js/data/items.js"></script>
+    <script src="js/data/characters.js"></script>
+    <script src="js/data/docs.js"></script>
+    <script src="js/data/quests.js"></script>
+    <script src="js/data/chapter1.js"></script>
+    <script src="js/data/chapter2.js"></script>
+    <script src="js/data/chapter3.js"></script>
+    <script src="js/data/chapter4.js"></script>
+    <script src="js/data/chapter5.js"></script>
+    <script src="js/core/audio.js"></script>
+    <script src="js/core/input.js"></script>
+    <script src="js/core/player.js"></script>
+    <script src="js/core/world.js"></script>
+    <script src="js/core/interact.js"></script>
+    <script src="js/core/ui.js"></script>
+    <script src="js/render/renderer.js"></script>
+    <script src="js/game.js"></script>
+</body>
+</html>

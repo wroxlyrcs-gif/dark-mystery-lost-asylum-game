@@ -1,0 +1,6 @@
+{
+  "appId": "com.darkmystery.lostasylum",
+  "appName": "Dark Mystery The Lost Asylum",
+  "webDir": ".",
+  "bundledWebRuntime": false
+}
